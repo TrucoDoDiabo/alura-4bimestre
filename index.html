@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="blob:chrome-untrusted://media-app/5bc0177f-a798-4406-b2c7-3f0f7fc1a311"Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Usuario.svg alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/ApacheKafka.svg
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Lideran%C3%A7a.svg"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Javascript.svgalt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Guia%20Front-end.svg alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Portugol.svg alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Acessibilidade.svg alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+          <p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+        </div>
+        <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/ApacheKafka.svg
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Lideran%C3%A7a.svg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Javascript.svgalt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="ihttps://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Guia%20Front-end.svgalt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="ihttps://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Portugol.svg alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="ihttps://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Acessibilidade.svgalt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Manoel Gomes</h2>
+          <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="data:image/webp;base64,UklGRmIhAABXRUJQVlA4IFYhAABQoQCdASo4ATgBPplGnkqlo6KnJ7SKwOATCU3bq9dArrF3s/U873kPwI+WyLOWfM16Q833pt/rX+y9hf9eeol5o/Ms/737TfAjzVerN/rXq1+XP7UX8M/7XpHYQO2y/5vTbbHc3NjBiMrbxV/1unz/q+Qn+M9QX+if4/1hv97ywah/TE9I0x8PkCcztcC0QrRyMzl4dAgudc4OLY+5RtHh83mmOzTphl28bPGiK/GIui9sYN/T8XfnfD3bMIpBi/TxcJt6K/uagjTBoRvdPkuA3f/PYaZKYsyqvZfdqaF28a/TpYJFUjWT+b+KhdmgmXpctHR0DSM/wWBEa2Dm/bhnewXYnss8XgmjkdXff5xnBK8zi+JNXvvxG9mezHmdmOba+Hrpgl9FGlz4aYVfmFq9EWXzDaA+F/VYG4M0GKp/UEAn++choQIL9TLIzgS+zqps/sY6+8Zz4zRDQez9+j0L7FbSrhfxoYXKhfTOEkrV467WxZZfZRo3CMmzqGmLyV37aq9WrAMOHqnR7I++aRRIQ7fQ6ewJcaS3OveCohD4eZ0007x2u6wprxvTqwB1IQWJkYGTvlZKZrSUvYVGcdJMY8I1NYwZ/0zORcCR+09TSZjVbHcHpJ8MFtAIwy+eY4yqP4F89tT+ukptig1WspucWyDCI1nwyClhMI7JM5JkR8gFUlspDv8YvvEm+SAiHnBoLHRLDFC0FqvZ3VF4fdzyOYt3GsnwRQPy5dOcljXt5buk12MIi3ov1ns8WkSm+ABlOHsLLmnuXQtOYBqzM6CWwexzq41R/f/A/l4tiyn3EMytkr4StAQ1a+gzNgXr855cTZ8gVL6U1xjxh+NgOED+IAilXJ+w0ts3bEh7D1BuH4RldNtahGvoOKmz+jX8X8aGz7M+/XWnHCewn7ynMkiqavjTQhcYFdaBQvRMj8Bkmu5QniduywNBpKTbK/qG0TCDimgA0f+tLIxHsR0QjyY0RQ4k9n3qCTNDDowf01A8y7SfxFnxgPD+JuAN1+mbukP9nLMxTTJ8t9jc0x/CDVy29KPf5+nkFulAJ7j/Qi57em3t5l1BqKMH+imQ9gc+h/TrF096y1NYUVwmvTFut/weOmoWYqo+k0WUmi0Fxrw2n/tVb69RF3TIz67OCpJLw81lPRgVjo37KcR1ayu+QpS94gCcdm3/B8xIfYG0b6rQ0OzhsTA0C+ZfVba7agPRrMj2NnBQudPddpuOW0rLCy/9LnLBLnH4k/g8TL5zJwOBvY+iVGAHs6Y6eMExsvEwqwkPovjEk0gLCntyd0Tjgj3wNUN0IHvmF0k7qrMbk+PmdU5DIsplx/4chll12NDbJYssxIMfmsv0niwLGnlReCfH8h1OwqIXY4gG5wqxkbNNCbGbbC4dTa3t1XH4Sw7r/Jz+AGqdEFDMTVe68dTdpbXkE3gzKJntiOMDzviRCRjIizVeuAh05CTl1oYBn8/XfHWkFjRgzUHQeXXDs1jSF/DKO/WZ0SoelM4q/jycFamaBOnYY1B6Sk/lwzjdxIVYUamaP3xFpdNE6ZDztyl4CfpuA3k8855VLRXQAlaBGkNPxTssYmsjkAILBhQj2q1kNKd3JYntx1Q9IMjz0hTlxvAYbZ2JjinXi6/rL1ofLGe7DXUZxEmVOnirWz7zpL8r76XfEqV0Us5kfxf/TGsKOFTRa1gOcBd7NeTP4uJzbWFppygmOjbkkBHwHDh0iP20nFZreAAA/vmd8T3eVhfVcQ4JqtSy6U4KuQa4Cne2M8a1q67Od7mh3apAsZpGXgTRkQKpQ1VZ94lgWeplcucPq2zLH7hE4BEEt27sw740umOZwtVW9ERfMIDTf9x2it9jQnfzANlLNsV40EeVz3TRI0LtjWtTCn/Ka5Hk5hLay44cJ6JIv6m9F2Np9XZssszw/F2j2LC5U9fuYX9PBubOtx+Egx4oB2DdQxhh8C5GXPDgCOm9bwOHLx3lKyR57p74pp2lMPjDiZXag3EK1DAhfP9zAeDSnnbobOL1S4g1aieWmCormu9Iu4ncJHfTY1Q7s2TdYbaYfmgci//SsKyBuAAY2EGOlsJmg/V7Lt3DzprQTU+RpXHzNQshZq5Q6U58jK/Q1V0cYcemFesLG+gF2nrPyK+WzX+yMysgRBSpUWhC4O2piLX4gXOy/JaOZGKOJ3UQsMWXhmM4C79KDnz9sPqBuRPDswHMSr3ygWgjxNSenbtyO8MAuUFxvwXPjsbfoXRM51+sVvhpZet9vkBR0F0mWLIQwTAYep8W+cfXnGkC+iQHs7aG3C/9cNTmkab+jNSmzqJPhQfMN72NnOe5LEu7AhWtb5E4JL7Tk6d/LLS34zhWjwZIE+OVkCwAR4nu+FTQl4yDZPoDVpX07IYa4TYiFqrrFhSOx2zohbVeyBm7LAGa9h6ShAgO49uzgaOtaD7Rzgp1k6bUAPfMojV3NJEahgAU9I0PQ5n+AkOBa0JylLuWd9V0r3aI7JY0EJu8GMz7T3DUcpndSuJf2sJaarsZWf1Bq0mA1+cpSTlrphXoNCXcwE803RIIILozBsjAlvjHVtul2DMAg0fedgK4UTcJsxTi+I6QsIdG73aAA6mPpz+6m3lKeQSL86EwwCysABg4AGBkHkZUPQUEXzkELe4IDpniCCe4ww+Oa+S/DTySm+A/XjXhTGFWxriqPkFMIfIf4QbjoYEWf5OGa+T1VDb5JBrrmSJOsctPoLzQUmP3dSU+DBxgY0Sj0cwMqw3M4IjLSnKnfQ4FDccB5nOUUSXKk33IqCFzTpWH/cwYAAE5vYRcQCDuAvZfJPrPzb3dnS9W5H1snqVNqYtoO67FTYfhyasN19jRh6E6O1RwCHWIJz4YPwfef1/suScjxrk4Se9wDaFEmXyIib2ku7ejLp56ny1Sy/FcpWZ9p4m12ABLZz/BXcvbOcdtj/H6hHMkpEsyXqzD74DoLd8RHMPhTHtRvCzS2UMcNM5MRiv1/ZLmZ7uc57bayWYggJiyyt3dNotFngY/zeVsWFAonkjuNLDh6qAls7AWFBcWGWQ3T3fUtGWULbAKT1+c7JL0mJmzMAh1i+NKlniFIba537k4IvSDwciV1po8waYAe+AdY1tp0XN5WfrdmvYhbYjLEmvTnFVFBsylLp2s1/zG61nPPcqYTa/9Q6rEYtKsyuTAbjuPVPTlbYLWjM7KdoZTkuYFMP6lp78l4/OKGDTDT1NdhfSPvwAP2LPl7sGj1IMbWyPIvSsRYvAQhC1XGhxTpHFaOLACIQe3O5StiyEvdTcxJ1fgX2DxH7CipT8WiKQge10wByob5q8q9CWss81JJMnbtKNB0Rivh4m9zjOxvP2br/kbtM4LWRadenU1SmnvfqVu7KUj9smfg/gHrWRkezBrGjR7V2fCcD4wc7JoFNDBWls5yhPvlBPwtGhqw0BdpZc/hWVO0nRWQ9aPKF4K6vOhth6qYwMBSdTHNIIZGRmJ3L6rqHda50eciKr9j30QV+5c1IMAjCxlTfl+1DYcwzlXdbo1X8q5bVH6mTpYiyVZyAPQ8XcvxAju5ZMnjoGT2E2Xkvd4t6VPgUUJEiQ9VQOM3a+CNcO/W+dsv8sVv2c+qLs9uIacgPu+D2mHGFEgl9W/WpUcNQUMYMZnR8IvYAebaHmOe8POmZ4SPll8efQnzHb62xbBG9Rr1noCaZKmyD4YRcmzK3h7h3Wzj6Aw31BqNgL6IzdWpgSRTpr0ZJY7o2L9Tww1EK8TWOD3Ouwt8PzpZrUPOzyFwGHcqXC90fahf+nLk51GeA/2Z46h/MP8IIA0JCcXAzG02Whc54q6r4uA9u0BdAKgI5zVUKZ2R9WzMFvcgdqaYsvSa6tfIWaARM34N3t1QDXVrX5SQ6eKnbTLh7P28Ihl1O5mw18nV+BGui3zu00TEMY8GdJwjY7tH1+7caXm9PwP9M5bO1AORfObNBjPOFvrvN65nIDaXhhev1qjInqjeI6JVGy/L90WvMafLMqr4haGDBtjdFtZeQB4ovcokDi2c65MNwklZ0ySM0tjXuRV4mzpONbc1SPg3DeZ6ONqqS5eLHxqVMUOdHe/OMUvY1rczk2lheVmsHOgmFKw2kVGiBq5iXAstCaHt31YWYdtmfs2a1Np5La0MJDFE14Q3mVQkTH9KfsUjbF59NB0pJxwejf+2lo30u3jqsPa32hTeMs22l0B0SsgFBssscH1nFSlktSGlDO0eQ2Q2ZdwH5wuvGcRefAcVgA6nyyVlRoBQTwy3BPvcWmeQi/y/HCtPpqTumMyRGb0vsOnggxbROXggfB/PpXnnRSRQrF/8GFnpJAUDrjSxmHHQWxlxfw9itpuOefgj107nOFCqUos1GyR7KN6Qq8kjen58Hvgy5Kf1xWKTA9WWwJRg88Ojl3bnDK7d8cWjlP40n1dnTEdr1BUv2ZG71HX+y6H3eW8Qs5W9T2HZiv2v0oTthDlBw+wEFD9Gxq7aAnh5IsogTtxyyf4/UlVeRV6kEGnDtPAaE8Hg2j8xbrgwLWNYcgFL5eRxNGqZwJG6p9r6f5ykacKB/FpVCjRX+NS6Lsd5xgr06pNkeMMp1WLjc/oVrymtNdnmQAJkIsCRz2NY1Btfc2tOUmIN5yEcTA1y7SORXN96TN205HmMgME4VjZEIO9EpBb8QTiDmEOF1i1isOWJ8HCGrwP554fYzMOEq2/qsm2tVDCezfig31TAZedF5xOICRVPd1YJZlRWBQvzdFauQeyVV/LO/56YmoXUJ87L0QyHgxyuvO8LuCIWJAFlTkViYyQBhc/IwbLcITVRseK3o+6YFCMudJS5VYEcDj9HM2jfNF6NDEJu/3q4Rk2/H1Pgwabb5IDqFgPcPEWL6lEw5NU2gBS2iqSdp5qedhspbDWG78hYKFXN6AUm9X4xdqTWw3jrKSDjKQQu4wdnave+SHZxNy/kdA7YQXIZ0U0zKQ62E04VB4/TEiGFOR6ksBe8v1610ejO/PrUEKJb3LCU9hqnk0uvnvE2kiZpmgK6rWRwAALL2riuNQY2WD9BObBXkYOtaUv6NYpFcVA0psFxAfCGu96Z9CLDKfQgYIbQv6aQ47lvZ8DVFzP/4nnA8m+ai2RH1bRQDrJoYx3nnuoMyrLmT5hp5x39l9qFxq68PKCBW8OST/svib2vbiHcbgw4IKFfdAYWForlkdkffyiVBjFs6t1zryaB+SFWrJpyb1V+W8bANZfBsK/cWQczh8eolSYXz9wXB1aVnhY8FtfdjYZiQ1g+ctssST/hFodjWk3i8J/1sLpawP2FpIrWt59jQ72o/pGFe0cCUzZYGmZvu1kJrndQCfVf8BSIDhp7fE01IQMuz1T5mMwmExb5YO0eeqYi6xclXwT2WQK34NHZZOhMLlvUDzKb9xtVO/4v//wmX7bu3JLhLU32AqxChBirGA6Ht1dmW60oJtnMYUr33VDrQpezlbYfsetFfVEnlMgvZTpqAP7NB2/TnWxuN73kU1Lq44f5Frza5kmUWsfIC5Mq1DJbbucUfPgaoXaIGLfHexKQKkV7lC5sEUbQhGmsoCLoVZ0D8Mh/wbOVjOgtmk/wjGH85fb4mBpmXvRuR5dOCsFi4XrKNmI1GpNZ/bFwsNM7Me4DpfdfB2EYG8LENYSZzPAdEaqN/0HGtoa5mePsIV4H9cg9jgOYnDu5y4Y3oyhEYtwx15qIPGeIh4Y40/ergk8a1nzIGeN8YoLCdr3ts/0myiuJvorrk5gPudkFF+oNLestJL9KVEeTJR4BkYbX4k1Olhwm3gOtu/Q3EGcod6KgjjqIizhq7I6/kumTixDNpCcc9ln3rpUTGIsndqTGg/CnIdAOQ9f7/aDAcitpxoNi5vRSBnmzjUNUZqOkbQ+Pjyg4vF//NAnmmrqEBVrqaVLhekJlfM2zRWoEgAizfunvkr9JsiZXcl/lAbl72Vd842/m/JdHWhSDKCbRKHg0y4SJ+lcO3P66acdVpqLlIhXpNL6jRv/xvNWYdUCwlrwMa4/R6c9X7e6afHkeyDKeosB7g/0fGFObggeIvJcvtS6rPFQMzrvIeKpY7eb6P43VCiwTPnth3BaEHDPvDdPHMMJWPUW6Hxc9y31Nm9jv856Ipdlg/Cg683sHe4QyV+U9TiiVRfbFUwFbgd+snMNqeFbbi7t0hsXDAOrTHX4paZzn9zJes9J+wGKNsthmWB+2YRLkjzb6kwptsiooHHEX3WwuKpm+THiI2douFhFLuTzkfpew0hknk1Cwr6lcbO3uPZ0uUzqvefQU+TxBM4g9Qt5XM9sZpYos9NMtTq59bfGVbVH/GnThxcraFw/Qp71j9uR1mjTDwGaT2kjZHuDjonPn/+y+NrP4h7PJMWP+eAZOomzcbwY5DzSjWltsvMhR5vsYxe8ivBTXoCGNCvv46ug2QAfqqBxW/gdKWuo4yNIfHID06pV8fE49gBBc0JE8e9RCYY5KT2koQR/qxaUqLXQYwkzH9Cc3XdLkUtNn9rnx1jId4pQvSJ3QPzOW3IkAhkZlzTsFMj4MNSI2QgvFudz28FRqgxwJZ9gHhhiSbpIAwG7cUdS47fa6ue7q2bE06j5d+6x329L70cidz7MEhSlKYT1PrbLkyi6H7atcfhecginicruhDHL71Dpb98poLxHiDpmEkxBOiXbyakyzuvOuPbkIE3QPWT9M4R3hyg+BfKT0oCmMvFsXtKF2MQYiVnBkGaGbRGpYZxl9UMGVf12B8Jzmi7/aU00Gk3eq/c7Rf97Ym2AS3jE8BM/9OXTHw1UtMZ589ByyTbvOawVQ6occZFO2PEJZY60FB00UKVzfF75q9SydoUPorz2udkHEngtHqQsQs1uPkadVL0B0T4HbQw/kWq2WMAwZQBiWrpSPAHNk0kGPXbgztVToRxyThHf406JCrkMi2ZhrJmzN5+bz589o/M5aEHu//QIdx7+c1gttjPkcsJowMqIvS/Kujv7NwXGx7ZBrZ5S+U5h1qPRZJmNZ62moH3hEELwB3O2TISGEYjZWmskgpGizzj9e31FTFgBh9Q0pcjNJnpnL+3yHxRzBl28LR+IvjOlZZ1URucqMUTfovmaNocgBwnvbDHiGEHWEqi5zgEIxRg19A83HIfWGaG5o3muj7qtbgLIT5Ipbpw0t671btba5mWRlEskjQhQEdwjLzfoP5s8+jas7U94ygCgDux4Zs04UuvgBvfZSC9UTt/BTLoC9oKzEHNoU2kWN96Tbb5z3Z2Tb7N5HH2I3VoOamN4LhIlZJjOxEehRTXoOPwACVlNe/cu0D/blfecVEBzhqOuKdlcy14fo7Hu54hGTqB8NTobe2NxUAEhPSFgi5Wz6zCE8t9lYNY7gPYc+rdwDQbw8l5VooEsaS/xrQ8ENHGf8jPsR76NrrJId7NHZucCN9WjTue9+c2DdvmjobXUtcaD1FpOC/46phtlvvYJVtiph27IHIFmVPWg/U2f8RfTT23haeF0dwa7vQQ7/ES6CcTQdwRsQiuSTRRBspxHMsekQfelwXEro6wCQPzTymO/G85qi4ibQnTHPpAOWYR8jJOnJNfzA3xVqeZfiZc148XFdygiHRjaR0wUUkWeCz2vOiGsc+p+dfutXzxa4B3EKL+gU2WDhSC6kpWiY667Lo4QyMQ5Frz4aP8Ezgr0GgYFFm82o4WxnZxXg8kBHu7mUPUEcXicIGvV4c6bCFZANMidb9xHG1pwR1fYzQw43BfZZYqjqeTH3/lf9eLvFKwW6dOkU4/ATpC3gYPKGx6qYibzpx1b6NfmDSmKiaXqWZCHH7FEktJ4x4gK+H4PTlxJLMClc0zHbnLVZBk703XCxUPOgHYqLju9wkhLQ/h/6LW1YzWgaIQa8GNrj9E8m/uYdKv+SjM4tGs5gLB4Monef9zqTHirNIfmd7YCLASSq8M2Mhy+YS5pLwqb/UhFX2h9QRnZlQVLj5oHL1PtK9QjeIozGvRT0Y93NdzXs/+V1Rd+gseRV1Fd+uHcSlzqcIhKCZG1Pb25URbmwiME+v/92v5AlXXX4sDzAEyycNw8up0DVUyAzU/qddeHe3XgXqU2e/Q7Gkp16IGp0kQcNK9QWQ2byJPRyHon8EPG0aAteph68VrW/VncaNE5v5vHv9ybZTaCZ91rPKaUhpHuMgM1yUe3QMtkf0Nf1glUddWsb2iu0TXPGQueUmfbWkxaFvelk759dTCepM3DzCnZLNr2VB1l3w5I1PpefTVle3r9Si+/yNfZU2c7K1wtUaVSni0N2lY6e7bBHxzpGDs2V6TYWII7tiLokAamwjB/UgvtWOxHlwa3IaysynHxqJiTgO6p/vmqbpDtiyHQ/XBUhBG670r6YynndZOZPmWzciscC6zTFJ5RMXnj4h/P1aykeIoNiFxrjKaN3JQm89kvpWw209EAj0G9LtGe0NOZjirm2m5PcVIx3VeVJTy6Z3nxiMMclWdQBycO9LfT6QvGqNLs3gOe1+WrKvUhG2xqfP3pQFRK6EYxYOI16pIzQXiUIC80hss+zYcUr98lXkA7Ka7JMOZ0lciYTpZO79FsAR01+tN0Q1zW0QI+g8Qf7NS+fl8+Tc4/w6lgQtQO36NHkRXeuJEiKOaXFtP3pvt4QTPC3zbdlVbFXbUsHrIC3w3DHoDcibp8CeUTuFEB0MFwWbYTR3zY5+Nzpj+IzRuVR/fVESkG6Qf7Exdm07yHDwMT+bpGkfrLbDwreXT8JhrH42zbZcBjGM/y1cU2REfmRTCq3srqA+iggHG9IC7nnGtue8r1FCNqk7mo0eZSD8SUunFiXBCljUoOI1VyQvA3v1NeYseKZmkwGRlHEFj92B16743PgTP2aNl54rtVWfvKwppdjBi1gJ3JOeHTu0Ts6DZZCh0UNWm5k/2CGPyWTPS6vxTdA7bN+tGwBtHqG2pcjt/Ju3IgivUZyWguwjohf9iGHDVdaJ/+gu0iKE09IFcpO2e4cp9hGISHaoVQmu9V8PDv06Oby3L/xZkCrgIOZbxZ5FUTGXAiHxK5D2SbUFta6gqOxBbS/EhBn8/nKUPvBmSCtUzdzVQiXrhevOnuP+QIeIvjT7zISVzY7HTF0zDoqSUCfvrR3smGiQvRh9jNU4RMXuI2gJP9oNSvPenwhzfE0ltj9LQ4BENYY1LdBy+dxsZpOSSVQCF1wGYwM/cdgwlpSKbKhChHwkOk4YWGQOIghmvFQkN45cdTDPyABeBsG3EYp7t9i1MV4Us7UejPHgosCZD7aHHND9GzSqm0NfQu3y8KFNly4bBKK1ndynB4ZwgF5fysJErGEtGN/8UbseOj5GptffGih5vnpuX7aivKur1/yQWMu2+HvXkq2KqMNkRUqYYlcEtR6j8saGlXEhmJ/yS8XFB/GUtcECf3znf5ku1L+EPJcVtbxOv/RF+ezl1eDw+scwAg4T5EDeTY/vjr+nw6SPs+xKQMlnzLx7QnlhcMS/AQ0/qmPWIXxgiOOlDv3fhfdcyCyU6wSxgL06G6mUJCHcRQdrqgORvEeRtJZ38bemhV/8zCjQNOj8PNKib3myKh3AHryMw+U9unaFx/dAbJQrdV2FwTKnjoe8bHinOnVUKaOnWokor3XKjMYQRHF07DPZ2IfVI8HxBMGeaZxpepQX7N94FiWhcSYFA456iXcBF1PZtUFxxNN8gyvJoLRpEq2EAe2giMJmEhYC7wuubiuWkWkwgaPESJ95Kg9soJdsqIz50amyvAbnm9SLsCARYte/zok9VFqzEFQmo93lD+PQ1M2Wggc4SN0Tzsfr3FRW5KpB6QC87i1ozWaI3Y226CTxvzMbmlOc19hCQjnFEgagPNZwMVkBnyLIqZLjaywYbm7bVhByx5LQ17D1JaJseTBgUDH8h7jzzUP7Km3lFvNu655BFfvGGmcAr9q/SlSAAizNiLmanZeoIkJhByolnIRobSm+XakMKy6aF4SjKNOIFmZ28ghzrLg9ur3RS0RA9KtGCwS8MqPrVSgOwuhv4lpF3viXMgequT2sYu0mClR7tDLbGqi9fjuvR3Mv2be5GwRJ9a6761kMec3da67m5WXm3hdPariY244XQuNuLAasUE9llpvmSStpMOJ2EPCj+2YLMbxCr6kBN2E3IxQyqKl814+EpQQKTD3TH33aAIM2wN6Yy6VvKnhUTAX/2NorxNnJrM0xqUgALqvd0OMvno6tjfrdvgkKO4GETyZ7Y6+qdOJj79TGnu9mEJloyzyuSXW8KIcXlyE9CS7IsBoLQUx41SWvbbjweD6JPCed1Qci8c6D93mI1h9F2/ABDSfKzrGbE0KY7IletkEHPxns8tJhaJ9rY2uOTzXBJpRdCqNCcg0YR2U6NuZrOF6ywU8S8h/MzG9i2662vvIweFQnFM9adDg97zVtJl68ifld13hSjHlpZ9gECtjMpAVbytFlqwDfBM6u45hXcyx8y6tLSGOnUpaW5rVQQTkZX3PbAdyp0uKJuZAej0QmYlUgEiRRNgrOUiys6op6TtznyznWJbjTjM2jklMEaIFGNR8LD1fe1rGcwErp7hZ2+V8DC31sEa9uiKrt2sX7iIWEhYyBVXUZrjKgLu72HmCdyAJ71FVxOlFQ8XaZMRwlzp5T/9lOLTrHdsVw7jS6y5P6RFMSx4kpk1rDNQ9gM5HZOYkkmhIlnAIfv0Rl8Y8/W6V0QttKQvQENwLgbIzsxJ/P9n3Awzii/kUrdMFm/6RwkVmqVyi8uOAQTy7UmJN3G3AN69US02M1V4IQaQWQNzWvDkfXyXMzmfnVBpR0KWaNxx3EdrbhZX0sLvD21vrtMH530e4UTtjhmWewnUCMmNsiSJoM4WER9F/02a+2y6E75661ntzZopLXz2nIP9yvckR7CZNa2SB/I5SaK7aOaS6fozCZPMJDYUlLWtCi9KlEwZ4gPqHei4WtyWxPMRmpnIXxRYFVPyAPYwhIC/ok9CCn3g3VqpkEfPhmxdiWF2bRLIZLmC14SphC6bPKHICR53hBrKmZPBQ17+Ss6YN/GfnEDL2n2SSfzCuynmT3jUWKFg884t46YKg1arHQACJnjjy8wa2NmDaOHdA6fPqWY+h9YSVaLw31XX+VZqYgI1amML1zqWeOnT3vOzLwix3xaIFleS9OA8YryxBxIh6WuAjGdkwJf/dM7ghLomnv4FQZLLdFjYl7Ig9T339KkKFcTi5Dy9AutOgrcdGMicjA/MRXkhUCWW9faXsF+jHd/SY51j36BU3eD/vv+cnN6thsYa4Lf3aE3H9TU2d492gw/Ube+yWMS24/MGztx3Bnq1HKqL3V5xKfWBD1UdMgVsujSfg1e3ZxW83+w5NrxRITv+KzeVUSeGNvIYIQx+UJSo51QJE7LA0ph9naJ1y/22Pa4hB6w1jHncdmkyzQAAAA==" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="https://raw.githubusercontent.com/giullianacestari/alura-books/e9df86af5a779e218d35b92912454ae033dc57b2/img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Marketing Digital</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Agile</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Startups</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">HTML & CSS</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Python</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">OO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Java</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
